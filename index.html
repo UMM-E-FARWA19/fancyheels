@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fancy Heels</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <!-- Menu Icon -->
+    <div class="menu-icon" onclick="toggleMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Search..." id="myInput" onkeyup="searchFunction()">
+      <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+
+    <!-- Icons -->
+    <div class="shopping" onclick="toggleCart()">
+      <i class="fa-solid fa-bag-shopping" style="font-size: 35px; cursor: pointer;"></i>
+      <span class="quantity">0</span>
+    </div>
+
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav id="nav-menu">
+    <ul>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Services">Services</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="carousel-wrapper">
+    <div class="carousel">
+      <div class="item"><img src="images/heel1.jpg" alt=""></div>
+      <div class="item"><img src="images/heel2.jpg" alt=""></div>
+      <div class="item"><img src="images/heel 3.jpg" alt=""></div>
+      <div class="item"><img src="images/heel4.jpg" alt=""></div>
+      <div class="item"><img src="images/heel5.jpg" alt=""></div>
+      <div class="item"><img src="images/heel6.jpg" alt=""></div>
+      <div class="item"><img src="images/heel7.jpg" alt=""></div>
+      <div class="item"><img src="images/heel8.jpg" alt=""></div>
+      <div class="item"><img src="images/heel9.jpg" alt=""></div>
+      <div class="item"><img src="images/heel1.jpg" alt=""></div>
+      <div class="item"><img src="images/heel2.jpg" alt=""></div>
+      <div class="item"><img src="images/heel 3.jpg" alt=""></div>
+      <div class="item"><img src="images/heel4.jpg" alt=""></div>
+      <div class="item"><img src="images/heel5.jpg" alt=""></div>
+      <div class="item"><img src="images/heel6.jpg" alt=""></div>
+      <div class="item"><img src="images/heel7.jpg" alt=""></div>
+      <div class="item"><img src="images/heel8.jpg" alt=""></div>
+      <div class="item"><img src="images/heel9.jpg" alt=""></div>
+    </div>
+  </div>
+
+
+  <section>
+    <div class="container" id="products-container">
+
+      <div class="card">
+        <div class="card-inner" style="--clr:#d3b19a;">
+          <div class="box">
+            <div class="imgBox">
+              <img src="images/heel1.jpg" alt="Tonic">
+            </div>
+            <div class="icon">
+              <a href="#" class="iconBox"><span>
+                  <i class="fa-solid fa-arrow-up-right-from-square" onclick="addToCart('Wine Red Heels', 9000)"></i>
+                </span></a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h3>Wine Red Heels</h3>
+          <p>These heels offer a sleek design and are perfect for formal occasions.</p>
+          <ul>
+            <li style="--clr-tag:#d3b19a;" class="branding">RS.9,000.00</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner" style="--clr:#d3b19a;">
+          <div class="box">
+            <div class="imgBox">
+              <img src="images/heel2.jpg" alt="Tonic">
+            </div>
+            <div class="icon">
+              <a href="#" class="iconBox"><span class="">
+                  <i class="fa-solid fa-arrow-up-right-from-square"
+                    onclick="addToCart('Glittery High Heels', 5000)"></i>
+                </span></a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h3>Glittery High Heels</h3>
+          <p>Stylish and comfortable, these heels are ideal for any event.</p>
+          <ul>
+            <li style="--clr-tag:#d3b19a;" class="branding">Rs.5,000.00</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner" style="--clr:#d3b19a;">
+          <div class="box">
+            <div class="imgBox">
+              <img src="images/heel 3.jpg" alt="Tonic">
+            </div>
+            <div class="icon">
+              <a href="#" class="iconBox"><span class="material-symbols-outlined">
+                  <i class="fa-solid fa-arrow-up-right-from-square" onclick="addToCart('Black Block Heels', 5500)"></i>
+                </span></a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h3>Black Block Heels</h3>
+          <p>Elegant heels that are perfect for adding a touch of class to your outfit.</p>
+          <ul>
+            <li style="--clr-tag:#d3b19a;" class="branding">Rs.5,500.00</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner" style="--clr:#d3b19a;">
+          <div class="box">
+            <div class="imgBox">
+              <img src="images/heel4.jpg" alt="Tonic">
+            </div>
+            <div class="icon">
+              <a href="#" class="iconBox"><span class="material-symbols-outlined">
+                  <i class="fa-solid fa-arrow-up-right-from-square" onclick="addToCart('Shiny Heels', 8000)"></i>
+                </span></a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h3>Shiny Heels</h3>
+          <p>Modern design with comfort, great for casual and formal occasions.</p>
+          <ul>
+            <li style="--clr-tag:#d3b19a;" class="branding">Rs.8,000.00</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner" style="--clr:#d3b19a;">
+          <div class="box">
+            <div class="imgBox">
+              <img src="images/heel5.jpg" alt="Tonic">
+            </div>
+            <div class="icon">
+              <a href="#" class="iconBox"><span class="material-symbols-outlined">
+                  <i class="fa-solid fa-arrow-up-right-from-square" onclick="addToCart('Butterfly Heels', 9000)"></i>
+                </span></a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h3>Butterfly Heels</h3>
+          <p>These trendy heels are designed for both style and comfort.</p>
+          <ul>
+            <li style="--clr-tag:#d3b19a;" class="branding">Rs.9,000.00</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner" style="--clr:#d3b19a;">
+          <div class="box">
+            <div class="imgBox">
+              <img src="images/heel6.jpg" alt="Tonic">
+            </div>
+            <div class="icon">
+              <a href="#" class="iconBox"><span class="material-symbols-outlined">
+                  <i class="fa-solid fa-arrow-up-right-from-square"
+                    onclick="addToCart('Escape Stiletto Heels', 10000)"></i>
+                </span></a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h3>Escape Stiletto Heels</h3>
+          <p>These bold heels are perfect for a statement look at any party.</p>
+          <ul>
+            <li style="--clr-tag:#d3b19a;" class="branding">Rs.10,000.00</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner" style="--clr:#d3b19a;">
+          <div class="box">
+            <div class="imgBox">
+              <img src="images/heel7.jpg" alt="Tonic">
+            </div>
+            <div class="icon">
+              <a href="#" class="iconBox"><span class="material-symbols-outlined">
+                  <i class="fa-solid fa-arrow-up-right-from-square" onclick="addToCart('Ankle strap Heels', 6500)"></i>
+                </span></a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h3>Ankle strap Heels</h3>
+          <p>A chic design perfect for everyday wear with premium comfort.</p>
+          <ul>
+            <li style="--clr-tag:#d3b19a;" class="branding">Rs.6,500.00</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner" style="--clr:#d3b19a;">
+          <div class="box">
+            <div class="imgBox">
+              <img src="images/heel8.jpg" alt="Tonic">
+            </div>
+            <div class="icon">
+              <a href="#" class="iconBox"><span class="material-symbols-outlined">
+                  <i class="fa-solid fa-arrow-up-right-from-square" onclick="addToCart('Green Block Heels', 5000)"></i>
+                </span></a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h3>Green Block Heels</h3>
+          <p>Sleek and stylish, these heels are the perfect blend of elegance and comfort.</p>
+          <ul>
+            <li style="--clr-tag:#d3b19a;" class="branding">Rs.5,000.00</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner" style="--clr:#d3b19a;">
+          <div class="box">
+            <div class="imgBox">
+              <img src="images/heel9.jpg" alt="Tonic">
+            </div>
+            <div class="icon">
+              <a href="#" class="iconBox"><span class="material-symbols-outlined">
+                  <i class="fa-solid fa-arrow-up-right-from-square" onclick="addToCart('Fine Heel', 9500)"></i>
+                </span></a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h3>Fine Heel</h3>
+          <p>These premium heels offer exceptional comfort with a fashionable edge</p>
+          <ul>
+            <li style="--clr-tag:#d3b19a;" class="branding">Rs.9,500.00</li>
+
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- Card (Cart) -->
+  <div class="cardd" id="cart">
+    <h1>CARD</h1>
+    <ul class="listCard"></ul>
+    <div class="checkout">
+      <div class="total">Total: Rs. 0</div>
+      <button class="closeShopping" onclick="toggleCart()">Close</button>
+      <button class="cta">Checkout <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+  </div>
+
+  <script src="java.js"></script>
+</body>
+
+</html>
